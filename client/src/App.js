@@ -7,7 +7,6 @@ import About from "./frontboard/About";
 import Login from "./frontboard/Login";
 import Signup from "./frontboard/Signup";
 import Footer from "./components/Footer";
-import Dashboard from "./Dashboard/Dashboard";
 import Profile from "./Dashboard/Profile";
 import Contact from "./frontboard/Contact";
 import ProtectRouter from "./frontboard/ProtectRouter";
