@@ -11,6 +11,7 @@ import Profile from "./Dashboard/Profile";
 import Contact from "./frontboard/Contact";
 import ProtectRouter from "./frontboard/ProtectRouter";
 import ChatPage from "./Dashboard/ChatPage";
+import NotFound from "./components/NotFound";
 function App() {
  const [isAuthenticated , setisAuthenticated]=useState(
   !!localStorage.getItem("token"));
@@ -34,6 +35,7 @@ function App() {
             <Profile/>
             </ProtectRouter>
             }/>
+            <Route path="*" element={<NotFound />}/>
         </Routes>
       </div>
       <Footer/>
