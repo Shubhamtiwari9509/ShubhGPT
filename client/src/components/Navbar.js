@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { useEffect,useState } from "react";
+import { useEffect} from "react";
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
  
