@@ -6,6 +6,7 @@ import cors from "cors";
 import authRoutes from './auth/authentication.js';
 import  {verifyToken}  from "./middleware/middleware.js";
 import Chat from "./schemas/chat_schema.js";
+import paymentRoutes from './routes/razorPayRouters.js';
 
 
 dotenv.config();
@@ -17,14 +18,13 @@ app.use(express.json());
 app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
 
 app.use("/auth",authRoutes);
+app.use("/payment",paymentRoutes);
 
  
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
 
-app.get("/test", (req, res) => {
-  res.send("hello");
-});
+ 
 
 app.post("/api/chat",verifyToken, async (req, res) => {
   try {

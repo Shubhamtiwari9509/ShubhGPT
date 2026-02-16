@@ -12,9 +12,11 @@ import Contact from "./frontboard/Contact";
 import ProtectRouter from "./frontboard/ProtectRouter";
 import ChatPage from "./Dashboard/ChatPage";
 import NotFound from "./components/NotFound";
+import UpgradePage from './components/UpgradePage';
 function App() {
  const [isAuthenticated , setisAuthenticated]=useState(
   !!localStorage.getItem("token"));
+  const currentUser = JSON.parse(localStorage.getItem("user"));
   return (
     <>
       <Navbar isAuthenticated={isAuthenticated} setisAuthenticated={setisAuthenticated}/>
@@ -33,6 +35,12 @@ function App() {
           <Route path="/profile" element={
             <ProtectRouter> 
             <Profile/>
+            </ProtectRouter>
+            }/>
+
+          <Route path="/upgradepage" element={
+            <ProtectRouter> 
+            <UpgradePage user={currentUser}/>
             </ProtectRouter>
             }/>
             <Route path="*" element={<NotFound />}/>

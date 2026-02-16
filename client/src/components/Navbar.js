@@ -13,6 +13,14 @@ function Navbar({ isAuthenticated, setisAuthenticated }) {
     navigate("/login");
   };
 
+  const handelerUpgrade = ()=>{
+   if(!isAuthenticated){
+    navigate("/login");
+   }else{
+    navigate("/upgradepage");
+   }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm position-sticky top-0" style={{ zIndex: "9999" }}>
       <div className="container-fluid">
@@ -42,7 +50,7 @@ function Navbar({ isAuthenticated, setisAuthenticated }) {
                     Login
                   </a>
                 </li>
-
+                
                 <li className="nav-item">
                   <a className="btn btn-primary text-white px-3 ms-2" href={`${BACKEND_URL}/auth/signup`}>
                     Sign Up
@@ -56,7 +64,11 @@ function Navbar({ isAuthenticated, setisAuthenticated }) {
                     Profile
                   </NavLink>
                 </li>
-
+                <li className="nav-item">
+                  <button onClick={handelerUpgrade} className="btn btn-success px-3 ms-2">
+                   Upgrade
+                  </button>
+                </li>
                 <li className="nav-item">
                   <button onClick={handleLogout} className="btn btn-danger px-3 ms-2">
                     Logout

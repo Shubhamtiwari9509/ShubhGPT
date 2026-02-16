@@ -17,6 +17,8 @@ function Login({ setisAuthenticated }) {
 
       if (res.data.token) {
         localStorage.setItem("token", res.data.token);
+        localStorage.setItem("token", res.data.token);
+        localStorage.setItem("user", JSON.stringify(res.data.user));
         setisAuthenticated(true);
         setMessage("✅ Login Successful!");
 

@@ -64,7 +64,7 @@ router.post("/login", async (req, res) => {
 
     const userName = searchUser.userName;
     const token = jwt.sign(
-      { id: searchUser._id, email: searchUser.email, userName }, // 👈 yahan searchUser use karo
+      { id: searchUser._id, email: searchUser.email, userName },  
       process.env.JWT_SECRET,
       { expiresIn: "7d" }
     );
