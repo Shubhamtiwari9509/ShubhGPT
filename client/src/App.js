@@ -13,6 +13,8 @@ import ProtectRouter from "./frontboard/ProtectRouter";
 import ChatPage from "./Dashboard/ChatPage";
 import NotFound from "./components/NotFound";
 import UpgradePage from './components/UpgradePage';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 function App() {
  const [isAuthenticated , setisAuthenticated]=useState(
   !!localStorage.getItem("token"));
