@@ -1,0 +1,115 @@
+# Deep Aarogya - AI Access Policy
+# Last Updated: March 2026
+
+# Default rules
+User-Agent: *
+Allow: /
+Crawl-delay: 10
+
+# Public pages
+Allow: /blog/
+Allow: /articles/
+Allow: /health-tips/
+Allow: /ayurveda/
+Allow: /services/
+Allow: /doctors/
+Allow: /about/
+Allow: /contact/
+Allow: /products/
+Allow: /images/
+Allow: /videos/
+
+# Private areas
+Disallow: /admin/*
+Disallow: /login/*
+Disallow: /dashboard/*
+Disallow: /user-data/*
+Disallow: /patient-records/*
+Disallow: /profile/*
+Disallow: /api/*
+Disallow: /backend/*
+Disallow: /premium/*
+Disallow: /paid-consultation/*
+Disallow: /temp/*
+Disallow: /test/*
+
+# Block duplicate URLs
+Disallow: /*?*
+Disallow: /*&*
+
+# AI bots
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+User-Agent: ClaudeBot
+Disallow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: Anthropic-Research
+Disallow: /
+
+User-Agent: OpenAI-Research
+Allow: /
+
+User-Agent: FacebookBot
+Disallow: /
+
+User-Agent: AppleBot
+Allow: /
+
+User-Agent: CCBot
+Allow: /
+
+User-Agent: Bytespider
+Crawl-delay: 20
+Disallow: /
+
+User-Agent: Amazonbot
+Allow: /
+
+User-Agent: Meta-ExternalAgent
+Disallow: /
+
+# Search bots
+User-Agent: Googlebot
+Allow: /
+
+User-Agent: Bingbot
+Allow: /
+
+User-Agent: DuckDuckBot
+Allow: /
+
+User-Agent: Baiduspider
+Disallow: /
+
+User-Agent: YandexBot
+Disallow: /
+
+# AI usage
+# Do not use content for AI training without permission
+
+# Medical note
+# Content is for educational purposes only, not medical advice
+
+# Legal
+# Deep Aarogya complies with applicable data protection and privacy laws
+
+# Region
+# India | English, Hindi
+
+# Contact
+# Website: https://www.deepaarogya.com
+# Email: info@deepaarogya.com
+# Phone: +91-9876543210
+
+# Sitemap
+Sitemap: https://www.deepaarogya.com/sitemap.xml
+
+# Policy link
+LLM-Policy: https://www.deepaarogya.com/llms.txt

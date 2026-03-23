@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.deepaarogya.com/</loc>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <!-- Blog Section -->
+  <url>
+    <loc>https://www.deepaarogya.com/blog/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Articles Section -->
+  <url>
+    <loc>https://www.deepaarogya.com/articles/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Health Tips Section -->
+  <url>
+    <loc>https://www.deepaarogya.com/health-tips/</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Ayurveda Section -->
+  <url>
+    <loc>https://www.deepaarogya.com/ayurveda/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Services Section -->
+  <url>
+    <loc>https://www.deepaarogya.com/services/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Doctors Section -->
+  <url>
+    <loc>https://www.deepaarogya.com/doctors/</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://www.deepaarogya.com/about/</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://www.deepaarogya.com/contact/</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- Products Section -->
+  <url>
+    <loc>https://www.deepaarogya.com/products/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+</urlset>
